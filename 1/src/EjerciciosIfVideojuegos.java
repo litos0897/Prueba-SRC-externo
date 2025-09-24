@@ -23,10 +23,10 @@ public class EjerciciosIfVideojuegos {
         if (vida > 70) {
             System.out.println("Tu personaje está fuerte 💪");
 
-        } else if (vida >= 30 && vida <= 70) {
+        }if (vida >= 30 && vida <= 70) {
             System.out.println("Tu personaje está herido 😢");
 
-        } else if (vida < 30) {
+        }if (vida < 30) {
             System.out.println("Tu personaje está en peligro ⚠️");
 
         }
@@ -50,22 +50,20 @@ public class EjerciciosIfVideojuegos {
 
             //   Otro caso → "Tipo de ataque no reconocido"
 
-           /* String ataque;
+           String ataque = "fuego";
 
-            System.out.print("Tipo de ataque (fuego, agua, planta): ");
-
-            if (ataque = fuego) {
+            if (ataque == "fuego") {
                 System.out.println("¡Es super eficaz contra planta!");
 
-            } else if (ataque = agua){
+            } else if (ataque == "agua") {
                 System.out.println("¡Es super eficaz contra fuego!");
 
-            } else if (ataque = planta) {
+            } else if (ataque == "planta") {
                 System.out.println("¡Es super eficaz contra agua!");
 
             } else {
                 System.out.println("Tipo de ataque no reconocido");
-            } */
+            }
 
 
             // ==============================
@@ -86,17 +84,17 @@ public class EjerciciosIfVideojuegos {
 
             //   Si tiene menos de 800 → "No tienes suficientes V-Bucks"
 
-            int vBucks = 1000;
+            int vBucks = 2300;
             if (vBucks >= 2000) {
                 System.out.println("Puedes comprar una skin legendaria");
 
-            } else if (vBucks >= 1200) {
+            }if (vBucks >= 1200) {
                 System.out.println("Puedes comprar una skin épica");
 
-            } else if (vBucks >= 800) {
+            }if (vBucks >= 800) {
                 System.out.println("Puedes comparar una skin rara");
 
-            } else if (vBucks < 800) {
+            }if (vBucks < 800) {
                 System.out.println("No tienes suficientes V-Bucks");
 
             }
@@ -154,6 +152,21 @@ public class EjerciciosIfVideojuegos {
 
                 //   Entre 0 y 5 → "Madrugada, mejor dormir 😴"
 
+        int hora = 17;
+
+                  if (hora >= 6 && hora <= 11) {
+                      System.out.println("Es de mañana, los aldeanos están activos ☀️");
+
+                  }else if (hora >= 12 && hora <= 18) {
+                      System.out.println("Es de tarde, hora de explorar 🔍");
+
+                  }else if (hora >= 19 && hora <= 23) {
+                      System.out.println("Es de noche, cuidado con los mobs 🌙");
+
+                  }else if (hora >= 0 && hora <= 5) {
+                      System.out.println("Madrugada, mejor dormir 😴");
+                  }
+
 
                 // ==============================
 
@@ -197,16 +210,16 @@ public class EjerciciosIfVideojuegos {
         if (kills >= 12){
             System.out.println("Logro: Cazador experto 🏹");
 
-        }else if (muertes == 0){
+        }if (muertes == 0){
             System.out.println("Logro: Intocable 👑");
 
-        }else if (tiempo > 60){
+        }if (tiempo > 60){
             System.out.println("Logro: Maratón gamer ⏱️");
 
-        }else if (kills < muertes) {
+        }if (kills < muertes) {
             System.out.println("Logro: Necesita entrenar 🐣");
 
-        }else if (kills > 20 && muertes < 5){
+        }if ((kills > 20 || muertes < 5) && tiempo > 70) {
             System.out.println("Logro: PRO absoluto 🔥");
         }
 
